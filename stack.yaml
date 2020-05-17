@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+    api:
+        image: fleuri/whoami
+        ports:
+        - "8000:5000"
+        deploy:
+            replicas: 2
