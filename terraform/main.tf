@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "whoami" {
   template {
     spec {
       containers {
-        image = "gcr.io/hazel-aquifer-259216/whoami:latest"
+        image = "gcr.io/${var.project}/whoami:latest"
       }
     }
   }
